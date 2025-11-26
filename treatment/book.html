@@ -1,0 +1,1978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gods Life Health Care - Medical Departments</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN1iie8n5MkShNgEeBfpmQfPl2lCBqpYOnQg&s" alt="Gods Life Health Care" style="border-radius: 30px;">
+                <div class="logo-text">Gods <span>Life</span></div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="btn">Get Consultation</a></li>
+            </ul>
+
+            <div class="ham-icon" id="ham-icon">
+                <img class="ham-img" src="./logo/hamburger.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <div class="tab-container">
+        <div class="tab-buttons">
+            <div class="tab-button active" onclick="openTab(event, 'treatments')">Departments</div>
+            <div class="tab-button" onclick="openTab(event, 'Experts')">Consult with Experts</div>
+        </div>
+
+        <div id="treatments" class="tab-content active">
+            <!-- Medical Departments Content -->
+            <div class="page-title">
+                <h1>Medical Departments</h1>
+                <p>Comprehensive information about our specialized treatments</p>
+            </div>
+            
+            <div class="tab-interface">
+                <div class="vertical-tabs">
+                    <div class="vertical-tab active" onclick="openVerticalTab('ent')">
+                        <div class="tab-icon">👂</div>
+                        <div class="tab-title">ENT</div>
+                    </div>
+                    <div class="vertical-tab inactive" onclick="openVerticalTab('dental')">
+                        <div class="tab-icon">🦷</div>
+                        <div class="tab-title">Dental</div>
+                    </div>
+                    <div class="vertical-tab inactive" onclick="openVerticalTab('urology')">
+                        <div class="tab-icon">💧</div>
+                        <div class="tab-title">Urology</div>
+                    </div>
+                    <div class="vertical-tab inactive" onclick="openVerticalTab('oncology')">
+                        <div class="tab-icon">🎗️</div>
+                        <div class="tab-title">Cancer/Oncology</div>
+                    </div>
+                    <div class="vertical-tab inactive" onclick="openVerticalTab('cardiology')">
+                        <div class="tab-icon">❤️</div>
+                        <div class="tab-title">Cardiology/CVTS</div>
+                    </div>
+                </div>
+                
+                <div class="tab-content-area">
+                    <!-- ENT Tab -->
+                    <div id="ent" class="department-content active">
+                        
+                        
+                        <div class="content-grid">
+                            <div class="fade-in-left">
+                                <div class="info-section">
+
+                                    <div class="disease-header-content">
+                                    <h1>ENT Treatment</h1>
+                                    <p>Advanced diagnostics and personalized treatment plans for ENT patients</p>
+                                </div>
+
+                                <hr>
+                                <br>
+                                    <h3>About ENT</h3>
+                                    <p>ENT (Ear, Nose, and Throat) specialists diagnose and treat disorders of the ear, nose, throat, and related structures of the head and neck. Our ENT department provides comprehensive care for conditions ranging from sinus issues to hearing loss.</p>
+                                    <p>Our team of experienced otolaryngologists uses the latest diagnostic tools and treatment techniques to provide personalized care for each patient.</p>
+                                </div>
+                                
+                                <div class="info-section">
+                                    <h3>Common Symptoms</h3>
+                                    <ul class="symptoms-list">
+                                        <li>Hearing loss or tinnitus</li>
+                                        <li>Chronic sinusitis or nasal congestion</li>
+                                        <li>Frequent sore throats or tonsillitis</li>
+                                        <li>Vertigo or balance problems</li>
+                                        <li>Voice changes or hoarseness</li>
+                                        <li>Snoring or sleep apnea</li>
+                                        <li>Ear pain or infections</li>
+                                        <li>Difficulty swallowing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="fade-in-right">
+                                <div class="fade-in-right animated">
+                                    <div class="disease-image">
+                                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Dental Treatment">
+                                    </div>
+                                    
+                                </div>
+    
+
+                                <div class="info-section">
+                                    <h3>Treatment Options</h3>
+                                    <p>Click on each treatment option to learn more about our specialized approaches:</p>
+                                    
+                                    <!-- Treatment Options Dropdowns -->
+                                    <div class="treatment-options">
+                                        <!-- Surgery Dropdown -->
+                                        <div class="treatment-dropdown" id="surgery-dropdown">
+                                            <div class="treatment-header" onclick="toggleTreatmentDropdown('surgery-dropdown')">
+                                                <div class="treatment-title">
+                                                    <i class="treatment-icon fas fa-procedures"></i>
+                                                    Surgery
+                                                </div>
+                                                <div class="treatment-arrow">
+                                                    <i class="fas fa-plus"></i>
+                                                    <i class="fas fa-minus"></i>
+                                                </div>
+                                            </div>
+                                            <div class="treatment-content">
+                                                <div class="treatment-details">
+                                                    <div class="treatment-info">
+                                                        <div class="treatment-description">
+                                                            <h4>About Surgical Treatment</h4>
+                                                            <p>Surgery is often the primary treatment for many ENT conditions, especially when tumors or structural abnormalities are present. Our surgeons use minimally invasive techniques whenever possible to reduce recovery time and improve outcomes.</p>
+                                                            <p>Common ENT surgeries include:</p>
+                                                            <ul class="treatment-features">
+                                                                <li>Tonsillectomy and adenoidectomy</li>
+                                                                <li>Sinus surgery (endoscopic)</li>
+                                                                <li>Thyroid and parathyroid surgery</li>
+                                                                <li>Head and neck cancer surgery</li>
+                                                                <li>Cochlear implantation</li>
+                                                                <li>Septoplasty and rhinoplasty</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="treatment-image">
+                                                        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="ENT Surgery">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Radiation Therapy Dropdown -->
+                                        <div class="treatment-dropdown" id="radiation-dropdown">
+                                            <div class="treatment-header" onclick="toggleTreatmentDropdown('radiation-dropdown')">
+                                                <div class="treatment-title">
+                                                    <i class="treatment-icon fas fa-radiation"></i>
+                                                    Radiation
+                                                </div>
+                                                <div class="treatment-arrow">
+                                                    <i class="fas fa-plus"></i>
+                                                    <i class="fas fa-minus"></i>
+                                                </div>
+                                            </div>
+                                            <div class="treatment-content">
+                                                <div class="treatment-details">
+                                                    <div class="treatment-info">
+                                                        <div class="treatment-description">
+                                                            <h4>About Radiation Therapy</h4>
+                                                            <p>Radiation therapy uses high-energy rays to kill cancer cells or shrink tumors. For ENT cancers, it can be used as a primary treatment or in combination with surgery and chemotherapy.</p>
+                                                            <p>Advanced techniques we use include:</p>
+                                                            <ul class="treatment-features">
+                                                                <li>Intensity-Modulated Radiation Therapy (IMRT)</li>
+                                                                <li>Stereotactic Body Radiation Therapy (SBRT)</li>
+                                                                <li>Image-Guided Radiation Therapy (IGRT)</li>
+                                                                <li>Brachytherapy for precise targeting</li>
+                                                                <li>Proton therapy for complex cases</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="treatment-image">
+                                                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Radiation Therapy">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Chemotherapy Dropdown -->
+                                        <div class="treatment-dropdown" id="chemotherapy-dropdown">
+                                            <div class="treatment-header" onclick="toggleTreatmentDropdown('chemotherapy-dropdown')">
+                                                <div class="treatment-title">
+                                                    <i class="treatment-icon fas fa-pills"></i>
+                                                    Chemotherapy
+                                                </div>
+                                                <div class="treatment-arrow">
+                                                    <i class="fas fa-plus"></i>
+                                                    <i class="fas fa-minus"></i>
+                                                </div>
+                                            </div>
+
+                                        
+                                            <div class="treatment-content">
+                                                <div class="treatment-details">
+                                                    <div class="treatment-info">
+                                                        <div class="treatment-description">
+                                                            <h4>About Chemotherapy</h4>
+                                                            <p>Chemotherapy uses drugs to destroy cancer cells throughout the body. For ENT cancers, it's often used in combination with other treatments to improve outcomes.</p>
+                                                            <p>Our approach includes:</p>
+                                                            <ul class="treatment-features">
+                                                                <li>Neoadjuvant chemotherapy before surgery</li>
+                                                                <li>Concurrent chemotherapy with radiation</li>
+                                                                <li>Adjuvant chemotherapy after surgery</li>
+                                                                <li>Palliative chemotherapy for advanced cases</li>
+                                                                <li>Targeted drug combinations</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="treatment-image">
+                                                        <img src="https://images.unsplash.com/photo-1585435557343-3b092031d5ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Chemotherapy">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Targeted Drug Therapy Dropdown -->
+                                        <div class="treatment-dropdown" id="targeted-dropdown">
+                                            <div class="treatment-header" onclick="toggleTreatmentDropdown('targeted-dropdown')">
+                                                <div class="treatment-title">
+                                                    <i class="treatment-icon fas fa-bullseye"></i>
+                                                    Targeted Drug Therapy
+                                                </div>
+                                                <div class="treatment-arrow">
+                                                    <i class="fas fa-plus"></i>
+                                                    <i class="fas fa-minus"></i>
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="treatment-content">
+                                                <div class="treatment-details">
+                                                    <div class="treatment-info">
+                                                        <div class="treatment-description">
+                                                            <h4>About Targeted Drug Therapy</h4>
+                                                            <p>Targeted therapy uses drugs that specifically target molecular changes in cancer cells that help them grow, divide, and spread. This approach often has fewer side effects than traditional chemotherapy.</p>
+                                                            <p>Key benefits include:</p>
+                                                            <ul class="treatment-features">
+                                                                <li>Precision targeting of cancer cells</li>
+                                                                <li>Reduced damage to healthy cells</li>
+                                                                <li>Personalized based on genetic markers</li>
+                                                                <li>Often used when other treatments fail</li>
+                                                                <li>Can be combined with other therapies</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="treatment-image">
+                                                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Targeted Therapy">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Immunotherapy Dropdown -->
+                                        <div class="treatment-dropdown" id="immunotherapy-dropdown">
+                                            <div class="treatment-header" onclick="toggleTreatmentDropdown('immunotherapy-dropdown')">
+                                                <div class="treatment-title">
+                                                    <i class="treatment-icon fas fa-shield-alt"></i>
+                                                    Immunotherapy
+                                                </div>
+                                                <div class="treatment-arrow">
+                                                    <i class="fas fa-plus"></i>
+                                                    <i class="fas fa-minus"></i>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="treatment-content">
+                                                <div class="treatment-details">
+                                                    <div class="treatment-info">
+                                                        <div class="treatment-description">
+                                                            <h4>About Immunotherapy</h4>
+                                                            <p>Immunotherapy helps your immune system recognize and attack cancer cells. This innovative approach has shown remarkable success in treating various ENT cancers, especially those that have been resistant to other treatments.</p>
+                                                            <p>Our immunotherapy options include:</p>
+                                                            <ul class="treatment-features">
+                                                                <li>Checkpoint inhibitors (PD-1/PD-L1 inhibitors)</li>
+                                                                <li>CAR T-cell therapy for specific cancers</li>
+                                                                <li>Cancer vaccines in clinical trials</li>
+                                                                <li>Monoclonal antibodies</li>
+                                                                <li>Combination approaches with other treatments</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="treatment-image">
+                                                        <img src="https://images.unsplash.com/photo-1579154204601-015dbf4c8c13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Immunotherapy">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <div class="stat-value">85%</div>
+                                <div class="stat-label">Early Detection Success</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">2,500+</div>
+                                <div class="stat-label">Patients Treated</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">94%</div>
+                                <div class="stat-label">Patient Satisfaction</div>
+                            </div>
+                        </div>
+
+                        <!-- Collapsible Tabs Section - FIXED -->
+                        <div class="collapsible-tabs">
+                            <div class="collapsible-tab">
+                                <div class="collapsible-tab-header" onclick="toggleCollapsibleTab(this)">
+                                    <div class="collapsible-tab-title">Head & Neck / Endocrine</div>
+                                    <div class="collapsible-tab-icon">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="collapsible-tab-content">
+                                    <div class="content-grid">
+                                        <div class="fade-in-left">
+                                            <div class="info-section">
+                                                <h3>Advanced ENT Treatments</h3>
+                                                <p>Our ENT department offers cutting-edge treatments that provide better outcomes with fewer side effects. These include targeted therapies, immunotherapies, and minimally invasive surgical techniques.</p>
+                                                <p>We continuously update our treatment protocols based on the latest research and clinical trials to ensure our patients receive the most effective care available.</p>
+                                            </div>
+                                            
+                                            <div class="info-section">
+                                                <h3>Innovative Approaches</h3>
+                                                <ul class="symptoms-list">
+                                                    <li>Robotic-assisted surgery for precision</li>
+                                                    <li>Image-guided radiation therapy</li>
+                                                    <li>Personalized medicine based on genetic markers</li>
+                                                    <li>Combination therapies for better outcomes</li>
+                                                    <li>Minimally invasive endoscopic procedures</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fade-in-right">
+                                            <div class="disease-image">
+                                                <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Advanced ENT Treatment">
+                                            </div>
+                                            <h3>Treatment Options</h3>
+                                        <p>Click on each treatment option to learn more about our specialized approaches:</p>
+                                        
+                                        <!-- Treatment Options Dropdowns -->
+                                        <div class="treatment-options">
+                                            <!-- Surgery Dropdown -->
+                                            <div class="treatment-dropdown" id="surgery-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('surgery-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-procedures"></i>
+                                                        Surgery
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Surgical Treatment</h4>
+                                                                <p>Surgery is often the primary treatment for many ENT conditions, especially when tumors or structural abnormalities are present. Our surgeons use minimally invasive techniques whenever possible to reduce recovery time and improve outcomes.</p>
+                                                                <p>Common ENT surgeries include:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Tonsillectomy and adenoidectomy</li>
+                                                                    <li>Sinus surgery (endoscopic)</li>
+                                                                    <li>Thyroid and parathyroid surgery</li>
+                                                                    <li>Head and neck cancer surgery</li>
+                                                                    <li>Cochlear implantation</li>
+                                                                    <li>Septoplasty and rhinoplasty</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="ENT Surgery">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Radiation Therapy Dropdown -->
+                                            <div class="treatment-dropdown" id="radiation-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('radiation-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-radiation"></i>
+                                                        Radiation
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Radiation Therapy</h4>
+                                                                <p>Radiation therapy uses high-energy rays to kill cancer cells or shrink tumors. For ENT cancers, it can be used as a primary treatment or in combination with surgery and chemotherapy.</p>
+                                                                <p>Advanced techniques we use include:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Intensity-Modulated Radiation Therapy (IMRT)</li>
+                                                                    <li>Stereotactic Body Radiation Therapy (SBRT)</li>
+                                                                    <li>Image-Guided Radiation Therapy (IGRT)</li>
+                                                                    <li>Brachytherapy for precise targeting</li>
+                                                                    <li>Proton therapy for complex cases</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Radiation Therapy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Chemotherapy Dropdown -->
+                                            <div class="treatment-dropdown" id="chemotherapy-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('chemotherapy-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-pills"></i>
+                                                        Chemotherapy
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+
+                                            
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Chemotherapy</h4>
+                                                                <p>Chemotherapy uses drugs to destroy cancer cells throughout the body. For ENT cancers, it's often used in combination with other treatments to improve outcomes.</p>
+                                                                <p>Our approach includes:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Neoadjuvant chemotherapy before surgery</li>
+                                                                    <li>Concurrent chemotherapy with radiation</li>
+                                                                    <li>Adjuvant chemotherapy after surgery</li>
+                                                                    <li>Palliative chemotherapy for advanced cases</li>
+                                                                    <li>Targeted drug combinations</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1585435557343-3b092031d5ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Chemotherapy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Targeted Drug Therapy Dropdown -->
+                                            <div class="treatment-dropdown" id="targeted-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('targeted-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-bullseye"></i>
+                                                        Targeted Drug Therapy
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+
+                                                
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Targeted Drug Therapy</h4>
+                                                                <p>Targeted therapy uses drugs that specifically target molecular changes in cancer cells that help them grow, divide, and spread. This approach often has fewer side effects than traditional chemotherapy.</p>
+                                                                <p>Key benefits include:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Precision targeting of cancer cells</li>
+                                                                    <li>Reduced damage to healthy cells</li>
+                                                                    <li>Personalized based on genetic markers</li>
+                                                                    <li>Often used when other treatments fail</li>
+                                                                    <li>Can be combined with other therapies</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Targeted Therapy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Immunotherapy Dropdown -->
+                                            <div class="treatment-dropdown" id="immunotherapy-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('immunotherapy-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-shield-alt"></i>
+                                                        Immunotherapy
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Immunotherapy</h4>
+                                                                <p>Immunotherapy helps your immune system recognize and attack cancer cells. This innovative approach has shown remarkable success in treating various ENT cancers, especially those that have been resistant to other treatments.</p>
+                                                                <p>Our immunotherapy options include:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Checkpoint inhibitors (PD-1/PD-L1 inhibitors)</li>
+                                                                    <li>CAR T-cell therapy for specific cancers</li>
+                                                                    <li>Cancer vaccines in clinical trials</li>
+                                                                    <li>Monoclonal antibodies</li>
+                                                                    <li>Combination approaches with other treatments</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1579154204601-015dbf4c8c13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Immunotherapy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                                
+                                            
+                                                <!-- You can add even more content here now -->
+                                            </div>
+                                        </div>
+                                        <div class="collapsible-stats">
+                                            <div class="collapsible-stat-item">
+                                                <div class="collapsible-stat-value">72%</div>
+                                                <div class="collapsible-stat-label">Response Rate</div>
+                                            </div>
+                                            <div class="collapsible-stat-item">
+                                                <div class="collapsible-stat-value">18 mos</div>
+                                                <div class="collapsible-stat-label">Avg. Survival</div>
+                                            </div>
+                                            <div class="collapsible-stat-item">
+                                                <div class="collapsible-stat-value">45%</div>
+                                                <div class="collapsible-stat-label">Side Effects</div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            
+                            <div class="collapsible-tab">
+                                <div class="collapsible-tab-header" onclick="toggleCollapsibleTab(this)">
+                                    <div class="collapsible-tab-title">Nose & Sinus</div>
+                                    <div class="collapsible-tab-icon">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="collapsible-tab-content">
+                                    <div class="content-grid">
+                                        <div class="fade-in-left">
+                                            <div class="info-section">
+                                                <h3>Advanced ENT Treatments</h3>
+                                                <p>Our ENT department offers cutting-edge treatments that provide better outcomes with fewer side effects. These include targeted therapies, immunotherapies, and minimally invasive surgical techniques.</p>
+                                                <p>We continuously update our treatment protocols based on the latest research and clinical trials to ensure our patients receive the most effective care available.</p>
+                                            </div>
+                                            
+                                            <div class="info-section">
+                                                <h3>Innovative Approaches</h3>
+                                                <ul class="symptoms-list">
+                                                    <li>Robotic-assisted surgery for precision</li>
+                                                    <li>Image-guided radiation therapy</li>
+                                                    <li>Personalized medicine based on genetic markers</li>
+                                                    <li>Combination therapies for better outcomes</li>
+                                                    <li>Minimally invasive endoscopic procedures</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fade-in-right">
+                                            <div class="disease-image">
+                                                <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Advanced ENT Treatment">
+                                            </div>
+                                            <h3>Treatment Options</h3>
+                                        <p>Click on each treatment option to learn more about our specialized approaches:</p>
+                                        
+                                        <!-- Treatment Options Dropdowns -->
+                                        <div class="treatment-options">
+                                            <!-- Surgery Dropdown -->
+                                            <div class="treatment-dropdown" id="surgery-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('surgery-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-procedures"></i>
+                                                        Surgery
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Surgical Treatment</h4>
+                                                                <p>Surgery is often the primary treatment for many ENT conditions, especially when tumors or structural abnormalities are present. Our surgeons use minimally invasive techniques whenever possible to reduce recovery time and improve outcomes.</p>
+                                                                <p>Common ENT surgeries include:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Tonsillectomy and adenoidectomy</li>
+                                                                    <li>Sinus surgery (endoscopic)</li>
+                                                                    <li>Thyroid and parathyroid surgery</li>
+                                                                    <li>Head and neck cancer surgery</li>
+                                                                    <li>Cochlear implantation</li>
+                                                                    <li>Septoplasty and rhinoplasty</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="ENT Surgery">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Radiation Therapy Dropdown -->
+                                            <div class="treatment-dropdown" id="radiation-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('radiation-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-radiation"></i>
+                                                        Radiation
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Radiation Therapy</h4>
+                                                                <p>Radiation therapy uses high-energy rays to kill cancer cells or shrink tumors. For ENT cancers, it can be used as a primary treatment or in combination with surgery and chemotherapy.</p>
+                                                                <p>Advanced techniques we use include:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Intensity-Modulated Radiation Therapy (IMRT)</li>
+                                                                    <li>Stereotactic Body Radiation Therapy (SBRT)</li>
+                                                                    <li>Image-Guided Radiation Therapy (IGRT)</li>
+                                                                    <li>Brachytherapy for precise targeting</li>
+                                                                    <li>Proton therapy for complex cases</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Radiation Therapy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Chemotherapy Dropdown -->
+                                            <div class="treatment-dropdown" id="chemotherapy-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('chemotherapy-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-pills"></i>
+                                                        Chemotherapy
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+
+                                            
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Chemotherapy</h4>
+                                                                <p>Chemotherapy uses drugs to destroy cancer cells throughout the body. For ENT cancers, it's often used in combination with other treatments to improve outcomes.</p>
+                                                                <p>Our approach includes:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Neoadjuvant chemotherapy before surgery</li>
+                                                                    <li>Concurrent chemotherapy with radiation</li>
+                                                                    <li>Adjuvant chemotherapy after surgery</li>
+                                                                    <li>Palliative chemotherapy for advanced cases</li>
+                                                                    <li>Targeted drug combinations</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1585435557343-3b092031d5ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Chemotherapy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Targeted Drug Therapy Dropdown -->
+                                            <div class="treatment-dropdown" id="targeted-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('targeted-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-bullseye"></i>
+                                                        Targeted Drug Therapy
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+
+                                                
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Targeted Drug Therapy</h4>
+                                                                <p>Targeted therapy uses drugs that specifically target molecular changes in cancer cells that help them grow, divide, and spread. This approach often has fewer side effects than traditional chemotherapy.</p>
+                                                                <p>Key benefits include:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Precision targeting of cancer cells</li>
+                                                                    <li>Reduced damage to healthy cells</li>
+                                                                    <li>Personalized based on genetic markers</li>
+                                                                    <li>Often used when other treatments fail</li>
+                                                                    <li>Can be combined with other therapies</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Targeted Therapy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Immunotherapy Dropdown -->
+                                            <div class="treatment-dropdown" id="immunotherapy-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('immunotherapy-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-shield-alt"></i>
+                                                        Immunotherapy
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Immunotherapy</h4>
+                                                                <p>Immunotherapy helps your immune system recognize and attack cancer cells. This innovative approach has shown remarkable success in treating various ENT cancers, especially those that have been resistant to other treatments.</p>
+                                                                <p>Our immunotherapy options include:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Checkpoint inhibitors (PD-1/PD-L1 inhibitors)</li>
+                                                                    <li>CAR T-cell therapy for specific cancers</li>
+                                                                    <li>Cancer vaccines in clinical trials</li>
+                                                                    <li>Monoclonal antibodies</li>
+                                                                    <li>Combination approaches with other treatments</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1579154204601-015dbf4c8c13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Immunotherapy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                                
+                                            
+                                                <!-- You can add even more content here now -->
+                                            </div>
+                                        </div>
+                                        <div class="collapsible-stats">
+                                            <div class="collapsible-stat-item">
+                                                <div class="collapsible-stat-value">72%</div>
+                                                <div class="collapsible-stat-label">Response Rate</div>
+                                            </div>
+                                            <div class="collapsible-stat-item">
+                                                <div class="collapsible-stat-value">18 mos</div>
+                                                <div class="collapsible-stat-label">Avg. Survival</div>
+                                            </div>
+                                            <div class="collapsible-stat-item">
+                                                <div class="collapsible-stat-value">45%</div>
+                                                <div class="collapsible-stat-label">Side Effects</div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            
+                            <div class="collapsible-tab">
+                                <div class="collapsible-tab-header" onclick="toggleCollapsibleTab(this)">
+                                    <div class="collapsible-tab-title">Voice / Larynx</div>
+                                    <div class="collapsible-tab-icon">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="collapsible-tab-content">
+                                    <div class="content-grid">
+                                        <div class="fade-in-left">
+                                            <div class="info-section">
+                                                <h3>Advanced ENT Treatments</h3>
+                                                <p>Our ENT department offers cutting-edge treatments that provide better outcomes with fewer side effects. These include targeted therapies, immunotherapies, and minimally invasive surgical techniques.</p>
+                                                <p>We continuously update our treatment protocols based on the latest research and clinical trials to ensure our patients receive the most effective care available.</p>
+                                            </div>
+                                            
+                                            <div class="info-section">
+                                                <h3>Innovative Approaches</h3>
+                                                <ul class="symptoms-list">
+                                                    <li>Robotic-assisted surgery for precision</li>
+                                                    <li>Image-guided radiation therapy</li>
+                                                    <li>Personalized medicine based on genetic markers</li>
+                                                    <li>Combination therapies for better outcomes</li>
+                                                    <li>Minimally invasive endoscopic procedures</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fade-in-right">
+                                            <div class="disease-image">
+                                                <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Advanced ENT Treatment">
+                                            </div>
+                                            <h3>Treatment Options</h3>
+                                        <p>Click on each treatment option to learn more about our specialized approaches:</p>
+                                        
+                                        <!-- Treatment Options Dropdowns -->
+                                        <div class="treatment-options">
+                                            <!-- Surgery Dropdown -->
+                                            <div class="treatment-dropdown" id="surgery-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('surgery-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-procedures"></i>
+                                                        Surgery
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Surgical Treatment</h4>
+                                                                <p>Surgery is often the primary treatment for many ENT conditions, especially when tumors or structural abnormalities are present. Our surgeons use minimally invasive techniques whenever possible to reduce recovery time and improve outcomes.</p>
+                                                                <p>Common ENT surgeries include:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Tonsillectomy and adenoidectomy</li>
+                                                                    <li>Sinus surgery (endoscopic)</li>
+                                                                    <li>Thyroid and parathyroid surgery</li>
+                                                                    <li>Head and neck cancer surgery</li>
+                                                                    <li>Cochlear implantation</li>
+                                                                    <li>Septoplasty and rhinoplasty</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="ENT Surgery">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Radiation Therapy Dropdown -->
+                                            <div class="treatment-dropdown" id="radiation-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('radiation-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-radiation"></i>
+                                                        Radiation
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Radiation Therapy</h4>
+                                                                <p>Radiation therapy uses high-energy rays to kill cancer cells or shrink tumors. For ENT cancers, it can be used as a primary treatment or in combination with surgery and chemotherapy.</p>
+                                                                <p>Advanced techniques we use include:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Intensity-Modulated Radiation Therapy (IMRT)</li>
+                                                                    <li>Stereotactic Body Radiation Therapy (SBRT)</li>
+                                                                    <li>Image-Guided Radiation Therapy (IGRT)</li>
+                                                                    <li>Brachytherapy for precise targeting</li>
+                                                                    <li>Proton therapy for complex cases</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Radiation Therapy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Chemotherapy Dropdown -->
+                                            <div class="treatment-dropdown" id="chemotherapy-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('chemotherapy-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-pills"></i>
+                                                        Chemotherapy
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+
+                                            
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Chemotherapy</h4>
+                                                                <p>Chemotherapy uses drugs to destroy cancer cells throughout the body. For ENT cancers, it's often used in combination with other treatments to improve outcomes.</p>
+                                                                <p>Our approach includes:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Neoadjuvant chemotherapy before surgery</li>
+                                                                    <li>Concurrent chemotherapy with radiation</li>
+                                                                    <li>Adjuvant chemotherapy after surgery</li>
+                                                                    <li>Palliative chemotherapy for advanced cases</li>
+                                                                    <li>Targeted drug combinations</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1585435557343-3b092031d5ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Chemotherapy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Targeted Drug Therapy Dropdown -->
+                                            <div class="treatment-dropdown" id="targeted-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('targeted-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-bullseye"></i>
+                                                        Targeted Drug Therapy
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+
+                                                
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Targeted Drug Therapy</h4>
+                                                                <p>Targeted therapy uses drugs that specifically target molecular changes in cancer cells that help them grow, divide, and spread. This approach often has fewer side effects than traditional chemotherapy.</p>
+                                                                <p>Key benefits include:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Precision targeting of cancer cells</li>
+                                                                    <li>Reduced damage to healthy cells</li>
+                                                                    <li>Personalized based on genetic markers</li>
+                                                                    <li>Often used when other treatments fail</li>
+                                                                    <li>Can be combined with other therapies</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Targeted Therapy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Immunotherapy Dropdown -->
+                                            <div class="treatment-dropdown" id="immunotherapy-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('immunotherapy-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-shield-alt"></i>
+                                                        Immunotherapy
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Immunotherapy</h4>
+                                                                <p>Immunotherapy helps your immune system recognize and attack cancer cells. This innovative approach has shown remarkable success in treating various ENT cancers, especially those that have been resistant to other treatments.</p>
+                                                                <p>Our immunotherapy options include:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Checkpoint inhibitors (PD-1/PD-L1 inhibitors)</li>
+                                                                    <li>CAR T-cell therapy for specific cancers</li>
+                                                                    <li>Cancer vaccines in clinical trials</li>
+                                                                    <li>Monoclonal antibodies</li>
+                                                                    <li>Combination approaches with other treatments</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1579154204601-015dbf4c8c13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Immunotherapy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                                
+                                            
+                                                <!-- You can add even more content here now -->
+                                            </div>
+                                        </div>
+                                        <div class="collapsible-stats">
+                                            <div class="collapsible-stat-item">
+                                                <div class="collapsible-stat-value">72%</div>
+                                                <div class="collapsible-stat-label">Response Rate</div>
+                                            </div>
+                                            <div class="collapsible-stat-item">
+                                                <div class="collapsible-stat-value">18 mos</div>
+                                                <div class="collapsible-stat-label">Avg. Survival</div>
+                                            </div>
+                                            <div class="collapsible-stat-item">
+                                                <div class="collapsible-stat-value">45%</div>
+                                                <div class="collapsible-stat-label">Side Effects</div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            
+                            <div class="collapsible-tab">
+                                <div class="collapsible-tab-header" onclick="toggleCollapsibleTab(this)">
+                                    <div class="collapsible-tab-title">Cosmetic / Structural</div>
+                                    <div class="collapsible-tab-icon">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="collapsible-tab-content">
+                                    <div class="content-grid">
+                                        <div class="fade-in-left">
+                                            <div class="info-section">
+                                                <h3>Advanced ENT Treatments</h3>
+                                                <p>Our ENT department offers cutting-edge treatments that provide better outcomes with fewer side effects. These include targeted therapies, immunotherapies, and minimally invasive surgical techniques.</p>
+                                                <p>We continuously update our treatment protocols based on the latest research and clinical trials to ensure our patients receive the most effective care available.</p>
+                                            </div>
+                                            
+                                            <div class="info-section">
+                                                <h3>Innovative Approaches</h3>
+                                                <ul class="symptoms-list">
+                                                    <li>Robotic-assisted surgery for precision</li>
+                                                    <li>Image-guided radiation therapy</li>
+                                                    <li>Personalized medicine based on genetic markers</li>
+                                                    <li>Combination therapies for better outcomes</li>
+                                                    <li>Minimally invasive endoscopic procedures</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="fade-in-right">
+                                            <div class="disease-image">
+                                                <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Advanced ENT Treatment">
+                                            </div>
+                                            <h3>Treatment Options</h3>
+                                        <p>Click on each treatment option to learn more about our specialized approaches:</p>
+                                        
+                                        <!-- Treatment Options Dropdowns -->
+                                        <div class="treatment-options">
+                                            <!-- Surgery Dropdown -->
+                                            <div class="treatment-dropdown" id="surgery-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('surgery-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-procedures"></i>
+                                                        Surgery
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Surgical Treatment</h4>
+                                                                <p>Surgery is often the primary treatment for many ENT conditions, especially when tumors or structural abnormalities are present. Our surgeons use minimally invasive techniques whenever possible to reduce recovery time and improve outcomes.</p>
+                                                                <p>Common ENT surgeries include:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Tonsillectomy and adenoidectomy</li>
+                                                                    <li>Sinus surgery (endoscopic)</li>
+                                                                    <li>Thyroid and parathyroid surgery</li>
+                                                                    <li>Head and neck cancer surgery</li>
+                                                                    <li>Cochlear implantation</li>
+                                                                    <li>Septoplasty and rhinoplasty</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="ENT Surgery">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Radiation Therapy Dropdown -->
+                                            <div class="treatment-dropdown" id="radiation-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('radiation-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-radiation"></i>
+                                                        Radiation
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Radiation Therapy</h4>
+                                                                <p>Radiation therapy uses high-energy rays to kill cancer cells or shrink tumors. For ENT cancers, it can be used as a primary treatment or in combination with surgery and chemotherapy.</p>
+                                                                <p>Advanced techniques we use include:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Intensity-Modulated Radiation Therapy (IMRT)</li>
+                                                                    <li>Stereotactic Body Radiation Therapy (SBRT)</li>
+                                                                    <li>Image-Guided Radiation Therapy (IGRT)</li>
+                                                                    <li>Brachytherapy for precise targeting</li>
+                                                                    <li>Proton therapy for complex cases</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Radiation Therapy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Chemotherapy Dropdown -->
+                                            <div class="treatment-dropdown" id="chemotherapy-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('chemotherapy-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-pills"></i>
+                                                        Chemotherapy
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+
+                                            
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Chemotherapy</h4>
+                                                                <p>Chemotherapy uses drugs to destroy cancer cells throughout the body. For ENT cancers, it's often used in combination with other treatments to improve outcomes.</p>
+                                                                <p>Our approach includes:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Neoadjuvant chemotherapy before surgery</li>
+                                                                    <li>Concurrent chemotherapy with radiation</li>
+                                                                    <li>Adjuvant chemotherapy after surgery</li>
+                                                                    <li>Palliative chemotherapy for advanced cases</li>
+                                                                    <li>Targeted drug combinations</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1585435557343-3b092031d5ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Chemotherapy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Targeted Drug Therapy Dropdown -->
+                                            <div class="treatment-dropdown" id="targeted-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('targeted-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-bullseye"></i>
+                                                        Targeted Drug Therapy
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+
+                                                
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Targeted Drug Therapy</h4>
+                                                                <p>Targeted therapy uses drugs that specifically target molecular changes in cancer cells that help them grow, divide, and spread. This approach often has fewer side effects than traditional chemotherapy.</p>
+                                                                <p>Key benefits include:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Precision targeting of cancer cells</li>
+                                                                    <li>Reduced damage to healthy cells</li>
+                                                                    <li>Personalized based on genetic markers</li>
+                                                                    <li>Often used when other treatments fail</li>
+                                                                    <li>Can be combined with other therapies</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Targeted Therapy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- Immunotherapy Dropdown -->
+                                            <div class="treatment-dropdown" id="immunotherapy-dropdown">
+                                                <div class="treatment-header" onclick="toggleTreatmentDropdown('immunotherapy-dropdown')">
+                                                    <div class="treatment-title">
+                                                        <i class="treatment-icon fas fa-shield-alt"></i>
+                                                        Immunotherapy
+                                                    </div>
+                                                    <div class="treatment-arrow">
+                                                        <i class="fas fa-plus"></i>
+                                                        <i class="fas fa-minus"></i>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="treatment-content">
+                                                    <div class="treatment-details">
+                                                        <div class="treatment-info">
+                                                            <div class="treatment-description">
+                                                                <h4>About Immunotherapy</h4>
+                                                                <p>Immunotherapy helps your immune system recognize and attack cancer cells. This innovative approach has shown remarkable success in treating various ENT cancers, especially those that have been resistant to other treatments.</p>
+                                                                <p>Our immunotherapy options include:</p>
+                                                                <ul class="treatment-features">
+                                                                    <li>Checkpoint inhibitors (PD-1/PD-L1 inhibitors)</li>
+                                                                    <li>CAR T-cell therapy for specific cancers</li>
+                                                                    <li>Cancer vaccines in clinical trials</li>
+                                                                    <li>Monoclonal antibodies</li>
+                                                                    <li>Combination approaches with other treatments</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="treatment-image">
+                                                            <img src="https://images.unsplash.com/photo-1579154204601-015dbf4c8c13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Immunotherapy">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                                
+                                            
+                                                <!-- You can add even more content here now -->
+                                            </div>
+                                        </div>
+                                        <div class="collapsible-stats">
+                                            <div class="collapsible-stat-item">
+                                                <div class="collapsible-stat-value">72%</div>
+                                                <div class="collapsible-stat-label">Response Rate</div>
+                                            </div>
+                                            <div class="collapsible-stat-item">
+                                                <div class="collapsible-stat-value">18 mos</div>
+                                                <div class="collapsible-stat-label">Avg. Survival</div>
+                                            </div>
+                                            <div class="collapsible-stat-item">
+                                                <div class="collapsible-stat-value">45%</div>
+                                                <div class="collapsible-stat-label">Side Effects</div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="consultation-cta animate-on-scroll">
+                            <h3>Need Professional Advice?</h3>
+                            <p>Our ENT specialists are ready to help you with diagnosis and treatment options.</p>
+                            <a href="#" class="cta-button">Book Consultation</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Dental Tab -->
+                    <div id="dental" class="department-content">
+                        <div class="disease-header">
+                            <div class="disease-header-content">
+                                <h2>Dental Treatment</h2>
+                                <p>Comprehensive care for all dental and oral health needs</p>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="content-grid">
+                            <div class="fade-in-left">
+                                <div class="info-section">
+                                    <h3>About Dental Care</h3>
+                                    <p>Our dental department provides comprehensive oral health services, from routine cleanings to complex surgical procedures. We focus on preventive care to maintain your oral health and address issues before they become serious.</p>
+                                    <p>Our team of dental specialists includes general dentists, orthodontists, periodontists, and oral surgeons working together to provide complete dental care.</p>
+                                </div>
+                                
+                                <div class="info-section">
+                                    <h3>Common Dental Issues</h3>
+                                    <ul class="symptoms-list">
+                                        <li>Tooth decay and cavities</li>
+                                        <li>Gum disease (gingivitis and periodontitis)</li>
+                                        <li>Tooth sensitivity</li>
+                                        <li>Bad breath (halitosis)</li>
+                                        <li>Tooth loss</li>
+                                        <li>Oral cancer</li>
+                                        <li>Temporomandibular joint disorders (TMJ)</li>
+                                        <li>Misaligned teeth or bite issues</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="fade-in-right">
+                                <div class="info-section">
+                                    <h3>Treatment Options</h3>
+                                    <p>Click on each treatment option to learn more about our specialized approaches:</p>
+                                    
+                                    <!-- Treatment Options Dropdowns -->
+                                    <div class="treatment-options">
+                                        <!-- Fillings and Restorations Dropdown -->
+                                        <div class="treatment-dropdown" id="fillings-dropdown">
+                                            <div class="treatment-header" onclick="toggleTreatmentDropdown('fillings-dropdown')">
+                                                <div class="treatment-title">
+                                                    <i class="treatment-icon fas fa-tooth"></i>
+                                                    Fillings and Restorations
+                                                </div>
+                                                <i class="treatment-arrow fas fa-chevron-down"></i>
+                                            </div>
+                                            <div class="treatment-content">
+                                                <div class="treatment-details">
+                                                    <div class="treatment-info">
+                                                        <div class="treatment-description">
+                                                            <h4>About Fillings and Restorations</h4>
+                                                            <p>Dental fillings are used to repair cavities and restore the function and integrity of tooth structure. We use tooth-colored composite materials that blend seamlessly with your natural teeth.</p>
+                                                            <p>Our restoration services include:</p>
+                                                            <ul class="treatment-features">
+                                                                <li>Composite (tooth-colored) fillings</li>
+                                                                <li>Inlays and onlays for larger cavities</li>
+                                                                <li>Dental crowns for severely damaged teeth</li>
+                                                                <li>Bonding for chipped or discolored teeth</li>
+                                                                <li>Minimally invasive techniques</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="treatment-image">
+                                                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Dental Fillings">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Root Canal Therapy Dropdown -->
+                                        <div class="treatment-dropdown" id="rootcanal-dropdown">
+                                            <div class="treatment-header" onclick="toggleTreatmentDropdown('rootcanal-dropdown')">
+                                                <div class="treatment-title">
+                                                    <i class="treatment-icon fas fa-teeth"></i>
+                                                    Root Canal Therapy
+                                                </div>
+                                                <i class="treatment-arrow fas fa-chevron-down"></i>
+                                            </div>
+                                            <div class="treatment-content">
+                                                <div class="treatment-details">
+                                                    <div class="treatment-info">
+                                                        <div class="treatment-description">
+                                                            <h4>About Root Canal Therapy</h4>
+                                                            <p>Root canal treatment is used to save a tooth that is severely decayed or infected. The procedure involves removing the damaged area of the tooth (the pulp), cleaning and disinfecting it, then filling and sealing it.</p>
+                                                            <p>Benefits of root canal therapy:</p>
+                                                            <ul class="treatment-features">
+                                                                <li>Preserves your natural tooth</li>
+                                                                <li>Efficient and relatively comfortable</li>
+                                                                <li>Prevents spread of infection</li>
+                                                                <li>Restores normal biting force and sensation</li>
+                                                                <li>Maintains natural appearance</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="treatment-image">
+                                                        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Root Canal Therapy">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="stats-container">
+                                    <div class="stat-item">
+                                        <div class="stat-value">92%</div>
+                                        <div class="stat-label">Patient Satisfaction</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">5,000+</div>
+                                        <div class="stat-label">Patients Treated</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">98%</div>
+                                        <div class="stat-label">Success Rate</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="consultation-cta animate-on-scroll">
+                            <h3>Consult Our Dental Specialists</h3>
+                            <p>Our team of dental experts provides personalized treatment plans for each patient.</p>
+                            <a href="#" class="cta-button">Book Consultation</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Urology Tab -->
+                    <div id="urology" class="department-content">
+                        <div class="disease-header">
+                            <h2>Urology Treatment</h2>
+                            <p>Comprehensive care for urinary tract and male reproductive system disorders</p>
+                        </div>
+                       
+                        <div class="consultation-cta animate-on-scroll">
+                            <h3>Schedule a Urology Assessment</h3>
+                            <p>Our urology team provides comprehensive evaluations and treatments for urinary and reproductive health.</p>
+                            <a href="#" class="cta-button">Book Consultation</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Cancer/Oncology Tab -->
+                    <div id="oncology" class="department-content">
+                        <div class="disease-header">
+                            <h2>Cancer/Oncology Department</h2>
+                            <p>Advanced care for all types of cancer with personalized treatment plans</p>
+                        </div>
+                        
+                        <div class="consultation-cta animate-on-scroll">
+                            <h3>Consult Our Oncology Specialists</h3>
+                            <p>Our oncology team provides comprehensive care for all cancer types with the latest treatment approaches.</p>
+                            <a href="#" class="cta-button">Book Consultation</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Cardiology/CVTS Tab -->
+                    <div id="cardiology" class="department-content">
+                        <div class="disease-header">
+                            <h2>Cardiology/CVTS Department</h2>
+                            <p>Comprehensive care for heart and cardiovascular conditions</p>
+                        </div>
+                        
+                        <div class="consultation-cta animate-on-scroll">
+                            <h3>Schedule a Cardiac Evaluation</h3>
+                            <p>Our cardiology specialists provide comprehensive care for heart and vascular conditions.</p>
+                            <a href="#" class="cta-button">Book Consultation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Experts" class="tab-content">
+            <!-- Partner Hospitals Section -->
+            <section class="partners">
+                <div class="container">
+                    <div class="section-title animate-on-scroll">
+                        <h2 class="hospital-partner"><a href="hospital.html">Specialized Hospitals</a></h2>
+                        <p>We work with the world's leading healthcare institutions</p>
+                    </div>
+                    
+                    <div class="partners-grid stagger-animation">
+                        <!-- Hospital Card 1 -->
+                        <a href="#" class="partner-card">
+                            <div class="partner-img">
+                                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Global Health Institute">
+                                <div class="partner-overlay">
+                                    <h3 class="partner-name">Global Health Institute</h3>
+                                    <div class="partner-location">
+                                        <i class="fas fa-map-marker-alt"></i> Bangkok, Thailand
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partner-content">
+                                <ul class="partner-specialties">
+                                    <li>Cardiac Surgery</li>
+                                    <li>Cardiology/CVTS</li>
+                                    <li>Oncology</li>
+                                </ul>
+                            </div>
+                        </a>
+                        
+                        <!-- Hospital Card 2 -->
+                        <a href="#" class="partner-card">
+                            <div class="partner-img">
+                                <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Asia Medical Center">
+                                <div class="partner-overlay">
+                                    <h3 class="partner-name">Asia Medical Center</h3>
+                                    <div class="partner-location">
+                                        <i class="fas fa-map-marker-alt"></i> Singapore
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partner-content">
+                                <ul class="partner-specialties">
+                                    <li>Neurosurgery</li>
+                                    <li>Transplant Surgery</li>
+                                    <li>Fertility Treatments</li>
+                                </ul>
+                            </div>
+                        </a>
+                        
+                        <!-- Hospital Card 3 -->
+                        <a href="#" class="partner-card">
+                            <div class="partner-img">
+                                <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Mediterranean Wellness">
+                                <div class="partner-overlay">
+                                    <h3 class="partner-name">Mediterranean Wellness</h3>
+                                    <div class="partner-location">
+                                        <i class="fas fa-map-marker-alt"></i> Istanbul, Turkey
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partner-content">
+                                <ul class="partner-specialties">
+                                    <li>Bariatric Surgery</li>
+                                    <li>Hair Transplantation</li>
+                                    <li>Dermatology</li>
+                                </ul>
+                            </div>
+                        </a>
+                         
+                    </div>
+                </div>
+            </section>
+
+            <!-- Expert Doctors Section -->
+            <section class="experts-section">
+                <div class="container">
+                    <div class="section-title animate-on-scroll">
+                        <h2>Our Expert Doctors</h2>
+                        <p>Meet our team of highly qualified medical specialists</p>
+                    </div>
+                    
+                    <div class="experts-grid stagger-animation">
+                        <!-- Doctor 1 -->
+                        <div class="expert-card">
+                            <div class="expert-img">
+                                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Dr. Rameswar Prasad">
+                            </div>
+                            <div class="expert-info">
+                                <h3 class="expert-name">Dr. Rameswar Prasad</h3>
+                                <p class="expert-title">Oncology Specialist</p>
+                                <p class="expert-hospital">Medanta Hospital</p>
+                                <ul class="expert-specialties">
+                                    <li>ENT</li>
+                                    <li>Chemotherapy</li>
+                                    <li>Immunotherapy</li>
+                                </ul>
+                                <div class="expert-experience">
+                                    <span>15+ Years</span>
+                                    <span>500+ Surgeries</span>
+                                </div>
+                                <div class="expert-actions">
+                                    <a href="#" class="btn btn-primary">Book Consultation</a>
+                                    <a href="#" class="btn btn-outline">View Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Doctor 2 -->
+                        <div class="expert-card">
+                            <div class="expert-img">
+                                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Dr. Michael Chen">
+                            </div>
+                            <div class="expert-info">
+                                <h3 class="expert-name">Dr. Michael Chen</h3>
+                                <p class="expert-title">Hematology Specialist</p>
+                                <p class="expert-hospital">Artemis Hospital</p>
+                                <ul class="expert-specialties">
+                                    <li>Dental</li>
+                                    <li>Leukemia</li>
+                                    <li>Stem Cell Transplant</li>
+                                </ul>
+                                <div class="expert-experience">
+                                    <span>12+ Years</span>
+                                    <span>300+ Transplants</span>
+                                </div>
+                                <div class="expert-actions">
+                                    <a href="#" class="btn btn-primary">Book Consultation</a>
+                                    <a href="#" class="btn btn-outline">View Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Doctor 3 -->
+                        <div class="expert-card">
+                            <div class="expert-img">
+                                <img src="https://img.freepik.com/premium-photo/indian-female-doctor-wearing-white-coat-stethoscope-with-copy-space_75891-5267.jpg" alt="Dr. Priya Sharma">
+                            </div>
+                            <div class="expert-info">
+                                <h3 class="expert-name">Dr. Priya Sharma</h3>
+                                <p class="expert-title">Cardiologist</p>
+                                <p class="expert-hospital">Vedantu Medical Center</p>
+                                <ul class="expert-specialties">
+                                    <li>Urology</li>
+                                    <li>Cardiac Surgery</li>
+                                    <li>Angioplasty</li>
+                                </ul>
+                                <div class="expert-experience">
+                                    <span>18+ Years</span>
+                                    <span>1000+ Procedures</span>
+                                </div>
+                                <div class="expert-actions">
+                                    <a href="#" class="btn btn-primary">Book Consultation</a>
+                                    <a href="#" class="btn btn-outline">View Profile</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Medical Procedures Section -->
+            <section class="procedures-section">
+                <div class="container">
+                    <div class="section-title animate-on-scroll">
+                        <h2>Medical Procedures</h2>
+                        <p>Advanced treatments and procedures for various medical conditions</p>
+                    </div>
+                    
+                    <div class="procedures-grid stagger-animation">
+                        <!-- Procedure 1 -->
+                        <div class="procedure-card">
+                            <div class="procedure-icon">
+                                <i class="fas fa-lungs"></i>
+                            </div>
+                            <h3 class="procedure-name">ENT Surgery</h3>
+                            <p class="procedure-desc">Minimally invasive surgical procedures for ENT treatment with faster recovery times.</p>
+                            <ul class="procedure-details">
+                                <li>Video-Assisted Thoracoscopic Surgery (VATS)</li>
+                                <li>Lobectomy or Pneumonectomy</li>
+                                <li>Robotic-Assisted Surgery</li>
+                                <li>Post-operative care and monitoring</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Procedure 2 -->
+                        <div class="procedure-card">
+                            <div class="procedure-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <h3 class="procedure-name">Stem Cell Transplantation</h3>
+                            <p class="procedure-desc">Advanced stem cell therapies for Dental patients with high success rates.</p>
+                            <ul class="procedure-details">
+                                <li>Autologous Stem Cell Transplant</li>
+                                <li>Allogeneic Stem Cell Transplant</li>
+                                <li>Pre-transplant conditioning</li>
+                                <li>Post-transplant immune support</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Procedure 3 -->
+                        <div class="procedure-card">
+                            <div class="procedure-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h3 class="procedure-name">Cardiac Bypass Surgery</h3>
+                            <p class="procedure-desc">Comprehensive heart surgery procedures to restore proper blood flow to the heart.</p>
+                            <ul class="procedure-details">
+                                <li>Coronary Artery Bypass Grafting (CABG)</li>
+                                <li>Minimally Invasive Direct CABG</li>
+                                <li>Off-pump Coronary Artery Bypass</li>
+                                <li>Post-surgical rehabilitation program</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Consultation Form -->
+            <div class="consultation-cta animate-on-scroll">
+                <h3>Need Professional Advice?</h3>
+                <p>Our specialists are ready to help you with diagnosis and treatment options.</p>
+                <a href="#" class="cta-button">Book Consultation</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Why Choose Gods Life Health Care</h2>
+                <p>We are committed to providing the highest quality healthcare experience</p>
+            </div>
+            
+            <div class="features stagger-animation">
+                <div class="feature">
+                    <i class="fas fa-user-md"></i>
+                    <h3>World-Class Doctors</h3>
+                    <p>Our network includes internationally trained and experienced medical professionals.</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Affordable Pricing</h3>
+                    <p>High-quality treatments at 30-70% lower costs compared to Western countries.</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-notes-medical"></i>
+                    <h3>Comprehensive Care</h3>
+                    <p>End-to-end assistance from consultation to recovery and follow-up care.</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-globe"></i>
+                    <h3>Global Destinations</h3>
+                    <p>Access to premium healthcare facilities in world-renowned medical tourism destinations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Patient Testimonials</h2>
+                <p>Hear from our patients who have experienced our exceptional healthcare services</p>
+            </div>
+            
+            <div class="testimonials-container">
+                <div class="testimonial-wrapper stagger-animation">
+                    <div class="testimonial">
+                        <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Robert Chen">
+                        <p>"The care I received was exceptional. The surgeons were highly skilled, and the hospital facilities were state-of-the-art. The recovery vacation package was the perfect way to recuperate."</p>
+                        <div class="name">Robert Chen</div>
+                        <div class="position">Cardiac Surgery Patient from Australia</div>
+                    </div>
+
+                    <div class="testimonial">
+                        <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Ching Chang">
+                        <p>"The care I received was exceptional. The surgeons were highly skilled, and the hospital facilities were state-of-the-art. The recovery vacation package was the perfect way to recuperate."</p>
+                        <div class="name">Ching Chang</div>
+                        <div class="position">Cardiac Surgery Patient from Australia</div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Emma Williams">
+                        <p>"I needed extensive dental work that was too expensive back home. Gods Life arranged everything beautifully - the treatment was top-notch, and I got to explore a beautiful country during my recovery."</p>
+                        <div class="name">Emma Williams</div>
+                        <div class="position">Dental Care Patient from UK</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content stagger-animation">
+                <div class="footer-column">
+                    <h3>Gods Life Health Care</h3>
+                    <p>Providing world-class medical tourism services with compassion and excellence.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Doctors</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Medical Services</h3>
+                    <ul>
+                        <li><a href="#">Cardiac Surgery</a></li>
+                        <li><a href="#">Cardiology/CVTS</a></li>
+                        <li><a href="#">Cosmetic Surgery</a></li>
+                        <li><a href="#">Dental Care</a></li>
+                        <li><a href="#">Fertility Treatments</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Medical Avenue, Health City</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+                    <p><i class="fas fa-envelope"></i> info@godslifehealthcare.com</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Gods Life Health Care. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Function for main horizontal tabs
+        function openTab(evt, tabName) {
+            var i, tabContent, tabButtons;
+
+            // Get all elements with class="tab-content" and hide them
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("active");
+            }
+
+            // Get all elements with class="tab-button" and remove the "active" class
+            tabButtons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        // Function for vertical tabs inside Departments
+        function openVerticalTab(tabId) {
+            // Hide all department contents
+            const departmentContents = document.querySelectorAll('.department-content');
+            departmentContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all vertical tabs and set to inactive
+            const verticalTabs = document.querySelectorAll('.vertical-tab');
+            verticalTabs.forEach(tab => {
+                tab.classList.remove('active');
+                tab.classList.add('inactive');
+            });
+            
+            // Show the selected department content and set tab to active
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+            event.currentTarget.classList.remove('inactive');
+            
+            // Close all collapsible tabs when switching between departments
+            const collapsibleTabs = document.querySelectorAll('.collapsible-tab-header');
+            collapsibleTabs.forEach(tab => {
+                tab.classList.remove('active');
+                tab.nextElementSibling.classList.remove('active');
+            });
+            
+            // Close all treatment dropdowns when switching between departments
+            const treatmentDropdowns = document.querySelectorAll('.treatment-dropdown');
+            treatmentDropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+                dropdown.querySelector('.treatment-content').classList.remove('active');
+            });
+        }
+
+        // Function for collapsible tabs
+        function toggleCollapsibleTab(element) {
+            // Close all other collapsible tabs
+            const allTabHeaders = document.querySelectorAll('.collapsible-tab-header');
+            const allTabContents = document.querySelectorAll('.collapsible-tab-content');
+            
+            allTabHeaders.forEach(header => {
+                if (header !== element) {
+                    header.classList.remove('active');
+                }
+            });
+            
+            allTabContents.forEach(content => {
+                if (content !== element.nextElementSibling) {
+                    content.classList.remove('active');
+                }
+            });
+            
+            // Toggle the clicked tab
+            element.classList.toggle('active');
+            element.nextElementSibling.classList.toggle('active');
+        }
+
+        // Function for treatment dropdowns
+        function toggleTreatmentDropdown(dropdownId) {
+            const dropdown = document.getElementById(dropdownId);
+            const isActive = dropdown.classList.contains('active');
+            
+            // Close all other treatment dropdowns
+            const allDropdowns = document.querySelectorAll('.treatment-dropdown');
+            allDropdowns.forEach(d => {
+                if (d.id !== dropdownId) {
+                    d.classList.remove('active');
+                    d.querySelector('.treatment-content').classList.remove('active');
+                }
+            });
+            
+            // Toggle the clicked dropdown
+            dropdown.classList.toggle('active');
+            dropdown.querySelector('.treatment-content').classList.toggle('active');
+        }
+
+        // Simple testimonial slider
+        let currentTestimonial = 0;
+        const testimonials = document.querySelectorAll('.testimonial');
+        
+        function showTestimonial(index) {
+            testimonials.forEach((testimonial, i) => {
+                testimonial.style.display = i === index ? 'block' : 'none';
+            });
+        }
+        
+        // Initialize first testimonial
+        showTestimonial(currentTestimonial);
+        
+        // Auto-rotate testimonials
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        }, 5000);
+
+        // Scroll Animation Functionality
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.8 &&
+                rect.bottom >= 0
+            );
+        }
+
+        function handleScrollAnimation() {
+            const elements = document.querySelectorAll('.animate-on-scroll, .fade-in-left, .fade-in-right, .scale-in, .stagger-animation');
+            
+            elements.forEach(element => {
+                if (isElementInViewport(element)) {
+                    element.classList.add('animated');
+                }
+            });
+        }
+
+        // Mobile menu toggle
+        document.getElementById('ham-icon').addEventListener('click', function() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('active');
+        });
+
+        // Initialize scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            handleScrollAnimation();
+            
+            // Add scroll event listener
+            window.addEventListener('scroll', handleScrollAnimation);
+        });
+    </script>
+
+</body>
+</html>

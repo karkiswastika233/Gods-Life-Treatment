@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Hospitals</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+<body>
+
+<header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="./logo/logo.jpeg" alt="Gods Life Health Care">
+                <div class="logo-text">Gods <span>Life</span></div>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="btn">Get Consultation</a></li>
+            </ul>
+
+            <div class="ham-icon">
+                <img class="ham-img" src="./logo/hamburger.jpeg" alt="Menu">
+            </div>
+        </div>
+    </header>
+
+
+ <!-- Search Bar -->
+<section class="search-section">
+    <div class="search-container">
+        <div class="search-header">
+          <h1>Find Your Treatments</h1>
+            <div class="search-inputs">
+                <input type="text" id="treatment" placeholder="Select your treatment" class="search-inputs">
+                <button class="search-btn" type="button">search</button>
+            </div>
+        </div>
+    </div>
+</section>
+  </header>
+  
+
+<!-- Treatment Section -->
+<section class="treatments">
+  <h2>Find Your Treatments</h2>
+  <div class="card-main">
+
+    <!-- Fertility Treatment -->
+    <div class="cards" data-name="fertility treatment" data-department="fertility">
+      <img src="6.jpg" alt="Fertility Treatment">
+      <div class="card">
+        <h3>Fertility Treatment</h3>
+        <ul>
+          <li>Advanced reproductive health solutions.</li>
+          <li>Success Rate: 95%</li>
+        </ul>
+      </div>
+      <button class="treatment-btn" onclick="window.location.href='book.html'">Learn More</button>
+    </div>
+
+    <!-- Heart Surgery -->
+    <div class="cards" data-name="heart surgery" data-department="cardiology">
+      <img src="2.jpg" alt="Heart Surgery">
+      <div class="card">
+        <h3>Heart Surgery</h3>
+        <ul>
+          <li>Surgical care for heart conditions.</li>
+          <li>Success Rate: 92%</li>
+        </ul>
+      </div>
+      <button class="treatment-btn" onclick="window.location.href='book.html'">Learn More</button>
+    </div>
+
+    <!-- Orthopedic Care -->
+    <div class="cards" data-name="orthopedic care" data-department="orthopedics">
+      <img src="3.jpg" alt="Orthopedic Care">
+      <div class="card">
+        <h3>Orthopedic Care</h3>
+        <ul>
+          <li>From joint replacement to sports injury recovery.</li>
+          <li>Success Rate: 90%</li>
+        </ul>
+      </div>
+      <button class="treatment-btn" onclick="window.location.href='book.html'">Learn More</button>
+    </div>
+
+    <!-- Cancer Therapy -->
+    <div class="cards" data-name="cancer therapy" data-department="oncology">
+      <img src="4.png" alt="Cancer Therapy">
+      <div class="card">
+        <h3>Cancer Therapy</h3>
+        <ul>
+          <li>Innovative oncology treatments with personalized care.</li>
+          <li>Success Rate: 90%</li>
+        </ul>
+      </div>
+      <button class="treatment-btn" onclick="window.location.href='book.html'">Learn More</button>
+    </div>
+
+    <!-- Cosmetic Surgery -->
+    <div class="cards" data-name="cosmetic surgery" data-department="aesthetics">
+      <img src="5.jpg" alt="Cosmetic Surgery">
+      <div class="card">
+        <h3>Cosmetic Surgery</h3>
+        <ul>
+          <li>Safe and professional cosmetic enhancements.</li>
+          <li>Success Rate: 95%</li>
+        </ul>
+      </div>
+      <button class="treatment-btn" onclick="window.location.href='book.html'">Learn More</button>
+    </div>
+
+    <!-- Neurology -->
+    <div class="cards" data-name="neurology" data-department="neurology">
+      <img src="7.png" alt="Neurology">
+      <div class="card">
+        <h3>Neurology</h3>
+        <ul>
+          <li>Specialized care for brain and nervous system conditions.</li>
+          <li>Success Rate: 88%</li>
+        </ul>
+      </div>
+      <button class="treatment-btn" onclick="window.location.href='book.html'">Learn More</button>
+    </div>
+
+    <!-- Dental Care -->
+    <div class="cards" data-name="dental care" data-department="dentistry">
+      <img src="8.webp" alt="Dental Care">
+      <div class="card">
+        <h3>Dental Care</h3>
+        <ul>
+          <li>Complete dental solutions from cosmetic to oral surgery.</li>
+          <li>Success Rate: 97%</li>
+        </ul>
+      </div>
+      <button class="treatment-btn" onclick="window.location.href='book.html'">Learn More</button>
+    </div>
+
+    <!-- Kidney & Urology -->
+    <div class="cards" data-name="kidney and urology" data-department="urology">
+      <img src="9.jpg" alt="Kidney & Urology">
+      <div class="card">
+        <h3>Kidney & Urology</h3>
+        <ul>
+          <li>Treatment for kidney stones, dialysis, and transplants.</li>
+          <li>Success Rate: 89%</li>
+        </ul>
+      </div>
+      <button class="treatment-btn" onclick="window.location.href='book.html'">Learn More</button>
+    </div>
+
+    <!-- Liver Transplant -->
+    <div class="cards" data-name="liver transplant" data-department="hepatology">
+      <img src="10.jpg" alt="Liver Transplant">
+      <div class="card">
+        <h3>Liver Transplant</h3>
+        <ul>
+          <li>Specialized transplant and hepatology care.</li>
+          <li>Success Rate: 80%</li>
+        </ul>
+      </div>
+      <button class="treatment-btn" onclick="window.location.href='book.html'">Learn More</button>
+    </div>
+
+    <!-- Eye Care -->
+    <div class="cards" data-name="eye care" data-department="ophthalmology">
+      <img src="11.jpg" alt="Eye Care">
+      <div class="card">
+        <h3>Eye Care</h3>
+        <ul>
+          <li>Cataract, LASIK, and other advanced eye surgeries.</li>
+          <li>Success Rate: 97%</li>
+        </ul>
+      </div>
+      <button class="treatment-btn" onclick="window.location.href='book.html'">Learn More</button>
+    </div>
+
+    <!-- Hair Transplant -->
+    <div class="cards" data-name="hair transplant" data-department="dermatology">
+      <img src="12.jpg" alt="Hair Transplant">
+      <div class="card">
+        <h3>Hair Transplant</h3>
+        <ul>
+          <li>Permanent and natural-looking hair restoration procedures.</li>
+          <li>Success Rate: 95%</li>
+        </ul>
+      </div>
+      <button class="treatment-btn" onclick="window.location.href='book.html'">Learn More</button>
+    </div>
+
+    <!-- Tummy Tuck -->
+    <div class="cards" data-name="tummy tuck" data-department="cosmetic surgery">
+      <img src="13.webp" alt="Tummy Tuck">
+      <div class="card">
+        <h3>Tummy Tuck</h3>
+        <ul>
+          <li>Improve the shape and appearance of the stomach area.</li>
+          <li>Success Rate: 97%</li>
+        </ul>
+      </div>
+      <button class="treatment-btn" onclick="window.location.href='book.html'">Learn More</button>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+  <!-- Footer -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-column">
+
+                    <h3>Gods Life Health Care</h3>
+
+                    <p>Providing world-class medical tourism services with compassion and excellence.</p>
+
+                    <div class="social-icons">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+                
+
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+
+                        <li><a href="#">Home</a></li>
+
+                        <li><a href="#">Services</a></li>
+
+                        <li><a href="#">Destinations</a></li>
+
+                        <li><a href="#">Doctors</a></li>
+
+                        <li><a href="#">Testimonials</a></li>
+
+                    </ul>
+
+                </div>
+
+                
+
+                <div class="footer-column">
+
+                    <h3>Medical Services</h3>
+
+                    <ul>
+
+                        <li><a href="#">Cardiac Surgery</a></li>
+
+                        <li><a href="#">Orthopedics</a></li>
+
+                        <li><a href="#">Cosmetic Surgery</a></li>
+
+                        <li><a href="#">Dental Care</a></li>
+
+                        <li><a href="#">Fertility Treatments</a></li>
+
+                    </ul>
+
+                </div>
+
+                
+
+                <div class="footer-column">
+
+                    <h3>Contact Us</h3>
+
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Medical Avenue, Health City</p>
+
+                    <p><i class="fas fa-phone"></i> +1 234 567 8900</p>
+
+                    <p><i class="fas fa-envelope"></i> info@godslifehealthcare.com</p>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="copyright">
+
+                <p>&copy; 2023 Gods Life Health Care. All rights reserved.</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+ 
